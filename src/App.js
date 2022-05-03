@@ -1,4 +1,4 @@
-
+ 
 import React, { Component } from 'react';
 import axios from 'axios';
 
@@ -25,7 +25,7 @@ export default class Form extends Component {
     event.preventDefault();
     const { name, message } = this.state;
     await axios.post(
-      'https://tashsv9px9.execute-api.us-east-1.amazonaws.com',
+      'https://zly9mflsbj.execute-api.us-east-1.amazonaws.com/default',
       { key1: `${name}, ${message}` }
     );
   }
